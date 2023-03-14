@@ -1,0 +1,578 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,600;1,300&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgba(0, 0, 0);
+    padding: 10px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 600;
+}
+
+.navbar {
+    margin: -1.3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    padding: 1rem 0.9rem;
+    background-color: #000;
+}
+
+.logo a {
+    color: #ff6100;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.logo span {
+    color: #fff;
+}
+
+.menu {
+    display: flex;
+    margin-left: 2em;
+    font-size: 1rem;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.animate-catagories {
+    display: inline-block;
+    position: relative;
+    padding: 0.5rem;
+}
+
+.animate-catagories:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 0.2rem;
+    bottom: 0;
+    left: 0;
+    background-color: #ff6100;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.animate-catagories:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin: 0rem 2em;
+}
+
+.login-search form {
+    display: flex;
+    margin-right: 1rem;
+}
+
+.login-search {
+    display: flex;
+    margin-right: 1.2rem;
+    align-items: center;
+}
+
+.login-search a {
+    text-decoration: none;
+}
+
+.login-search .search {
+    background-color: #ff6100;
+    color: #fff;
+    border: none;
+    font-size: 1rem;
+    border-radius: 50%;
+    padding: 0.6rem;
+    margin-left: 0.3rem;
+    cursor: pointer;
+}
+
+#logout {
+    display: none;
+}
+
+#cart-nav {
+    display: none;
+}
+
+#search-catagories {
+    width: 10rem;
+    border-radius: 0.5rem;
+    font-size: 0.9rem;
+    padding: 0.5rem;
+}
+
+.login-search .login {
+    background-color: #ff6100;
+    color: rgb(255, 255, 255);
+    border: #ff6100;
+    border-radius: 0.6rem;
+    padding: 0.3rem 0.5rem;
+    font-size: 0.7rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.login-search .login img {
+    margin-right: 0.3rem;
+}
+
+#login-block-wrapper {
+    margin: -1.2rem;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.8);
+    z-index: 1;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    padding: 6.6rem;
+    border-radius: 5.3rem;
+
+
+}
+
+.login-block span {
+    color: #fff;
+    text-decoration: underline;
+    padding: 1rem;
+    font-size: 1.3rem;
+}
+
+.login-block-elements {
+    display: flex;
+    justify-content: space-between;
+    gap: 5.3rem;
+    align-items: center;
+}
+
+.login-block-elements button {
+    background-color: #ff6100;
+    border: none;
+    padding: 2rem;
+    border-radius: 5.2rem;
+    color: #fff;
+    font-weight: 600;
+}
+
+
+
+
+.background-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 40em;
+    margin-left: 10%;
+    margin-top: 2em;
+}
+
+.top-image {
+    border: 1px solid #fff;
+    border-radius: 5px;
+    width: 100%;
+    height: 80%;
+}
+
+.top-image a {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: #fff;
+    transition: .4s ease-in-out;
+    padding: 1em;
+}
+
+
+
+.top-image a:hover {
+    color: #ff6100;
+    transition: .4s ease-in-out;
+}
+
+.holder {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+
+.acrylic-title {
+    background: url(https://www.itl.cat/pngfile/big/225-2252403_abstract-art-painting-png.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.oil-title {
+    background: url(https://upload.wikimedia.org/wikipedia/commons/1/18/%22Joy_-_Collage_of_Life%22_%2C_Ren%C3%A9_Cheng%2C_oil_painting%2C_2017.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.modern-title {
+    background: url(https://cdn.pixabay.com/photo/2018/11/12/18/49/art-3811501_1280.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.sketch-title {
+    background: url(https://live.staticflickr.com/3849/32808095950_caee94a1e6_b.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.abstract-title {
+    background: url(https://cdn.pixabay.com/photo/2017/05/24/19/26/abstract-2341349_1280.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.seperator {
+    display: flex;
+    justify-content: center;
+}
+
+.seperatoro {
+    width: 80%;
+}
+
+.seperator .seperatoro hr {
+    border-color: #ffffff;
+    height: 3px;
+    background-color: #ffffff;
+}
+
+.acrylic {
+    margin-top: 5rem;
+}
+
+.acrylic .name {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2.5rem;
+}
+
+.acrylic .name span {
+    font-size: 1.5rem;
+    color: #fff;
+    padding: 0.5rem;
+}
+
+.animate-title {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+
+.animate-title:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 0.2rem;
+    bottom: 0;
+    left: 0;
+    background-color: #ff6100;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.animate-title:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
+.temporary {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    align-items: center;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    width: 100%;
+}
+
+.acrylic .temporary i {
+    color: rgb(255, 255, 255);
+    font-size: small;
+}
+
+.catagories-box {
+    width: 12%;
+    height: 26rem;
+    background-color: #fff;
+    border-bottom-left-radius: 3.5rem;
+    border-bottom-right-radius: 3.5rem;
+    transform: scale(1);
+    transition: .8s;
+    border: 1px solid #ff6100;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+}
+
+.catagories-box:hover{
+    transform: scale(1.2);
+    transition: .8s;
+}
+
+.acrylic .temporary .details span {
+    color: black;
+    font-size: medium;
+}
+
+.acrylic .temporary .catagories-box .picture {
+    width: 100%;
+    height: 50%;
+    contain: strict;
+    display: flex;
+    justify-content: center;
+    background: rgb(94, 94, 94);
+    transform: scale(1);
+    transition: .8s;
+}
+
+.acrylic .temporary .catagories-box .picture:hover {
+    transform: scale(1);
+    transition: .8s;
+}
+
+.acrylic .temporary .catagories-box .picture .img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.acrylic .temporary .catagories-box .details {
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.acrylic .temporary .catagories-box .details .size-price span {
+    text-decoration: none;
+}
+
+.acrylic .temporary .catagories-box .details .size-price span:nth-child(1) {
+    color: grey;
+}
+
+.acrylic .temporary .catagories-box .details .size-price span:nth-child(2) {
+    margin-left: 0.3rem;
+}
+
+.acrylic .temporary .catagories-box .cart {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+
+.acrylic .temporary .catagories-box .cart button {
+    background-color: #ff6100;
+    padding: 1rem;
+    width: fit-content;
+    border: none;
+    border-radius: 1rem;
+    font-weight: bolder;
+    color: white;
+}
+
+.acrylic .temporary .catagories-box .cart button:hover {
+    background-color: #ff6100;
+    color: rgb(255, 255, 255);
+    transition: .7s;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.join-mail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 3.5rem;
+    margin-bottom: 3.5rem;
+    align-items: center;
+}
+
+.join-mail span {
+    font-size: larger;
+    margin-bottom: 1.3rem;
+    color: #fff;
+}
+
+.join-mail form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#mail-join {
+    margin-bottom: 1.3rem;
+    border-radius: 0.3rem;
+    border: none;
+    font-size: large;
+    text-align: center;
+    background-color: #ffffff;
+    border: none;
+    color: #000000;
+}
+
+.join-mail form button {
+    padding: 0.6rem;
+    background-color: #ff6100;
+    border: none;
+    border-radius: 0.6rem;
+    color: rgb(255, 255, 255);
+}
+
+.help-services {
+    display: flex;
+    justify-content: space-around;
+    margin: 3.5rem 7rem;
+    color: #fff;
+}
+
+.help-services .help {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+.help-services .help a {
+    text-decoration: none;
+    margin-bottom: 0.3rem;
+    color: #fff;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 100;
+    transition: .4s;
+}
+
+.help-services .help .help-title {
+    font-size: large;
+    margin-bottom: 2rem;
+}
+
+.help-services .services {
+    display: flex;
+    flex-direction: column;
+}
+
+.help-services .services a {
+    text-decoration: none;
+    color: #fff;
+    margin-bottom: 0.3rem;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 100;
+    transition: .4s;
+}
+
+.help-services .services .services-title {
+    font-size: large;
+    margin-bottom: 2rem;
+}
+
+.help-services .help a:hover,
+.help-services .services a:hover {
+    color: #ff6100;
+    transition: .4s;
+}
+
+.featured {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 3.5rem;
+    margin-bottom: 3.5rem;
+    color: #fff;
+}
+
+.featured-image {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+}
+
+.featured .brands p,
+.featured .artists p {
+    font-size: larger;
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 3.5rem;
+}
+
+.featured .brands {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.featured .brands .Images .one {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+
+}
+
+.footer-major {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.footer span {
+    color: #fff;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.last-footer {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+
+.last-footer a {
+    text-decoration: none;
+    color: #ff6100;
+}
